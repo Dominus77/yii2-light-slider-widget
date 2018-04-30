@@ -43,8 +43,53 @@ Once the extension is installed, simply use it in your code by  :
         'slideMargin' => 10,
         //...        
     ],
+    'listOptions' => [],
+    'itemOptions' => [],
 ]) ?>
 ```
+
+## Integrate with [lightGallery](http://sachinchoolur.github.io/lightGallery/)
+```php
+<?= \dominus77\lightslider\Slider::widget([
+    'id' => 'myGalleryID',
+    'items' => [
+        [
+            'item' => \yii\helpers\Html::img(Yii::getAlias('@web/uploads/img/image1.jpg')),
+            'options' => [
+                'data-thumb' => \Yii::getAlias('@web/uploads/img/thumb/image1.jpg'),
+                'data-src' => \Yii::getAlias('@web/uploads/img/largeImage1.jpg'),
+                //...
+            ]
+        ],
+        [
+            'item' => \yii\helpers\Html::img(Yii::getAlias('@web/uploads/img/image2.jpg')),
+            'options' => [
+                'data' => [
+                    'thumb' => \Yii::getAlias('@web/uploads/img/thumb/image2.jpg'),
+                    'src' => \Yii::getAlias('@web/uploads/img/largeImage2.jpg'),
+                ],
+                //...
+            ]
+        ],
+    ],
+    'clientOptions' => [            
+        'gallery' => true,
+        'item' => 1,
+        'loop' => true,
+        'thumbItem' => 9,
+        'slideMargin' => 0,
+        'enableDrag' => false,
+        'currentPagerPosition' => 'left',
+        'onSliderLoad' => new \yii\web\JsExpression("function(el) {
+            el.lightGallery({
+                selector: '#myGalleryID .lslide'
+            });
+        }"),
+        //...        
+    ],
+]) ?>
+```
+
 ## More Information
 Please, check the [JQuery LightSlider](http://sachinchoolur.github.io/lightslider/)
 

@@ -12,7 +12,8 @@
     ],
     "require": {
         "yiisoft/yii2": "~2.0.0",
-        "bower-asset/lightslider": "^1.1"
+        "bower-asset/lightslider": "^1.1",
+        "bower-asset/lightgallery": "^1.6"
     },
     "require-dev": {
         "phpunit/phpunit": "6.*"
