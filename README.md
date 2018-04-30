@@ -13,13 +13,13 @@ The preferred way to install this extension is through [composer](http://getcomp
 Either run
 
 ```
-php composer.phar require --prefer-dist dominus77/yii2-light-slider-widget "^1.0"
+php composer.phar require --prefer-dist dominus77/yii2-light-slider-widget "~1.0"
 ```
 
 or add
 
 ```
-"dominus77/yii2-light-slider-widget": "^1.0"
+"dominus77/yii2-light-slider-widget": "~1.0"
 ```
 
 to the require section of your `composer.json` file.
