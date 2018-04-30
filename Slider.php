@@ -142,7 +142,7 @@ class Slider extends Widget
      */
     public function run()
     {
-        if ($this->items) {
+        if (!empty($this->items)) {
             $this->registerAssets();
             echo Html::beginTag('ul', $this->listOptions) . PHP_EOL;
             if (ArrayHelper::isAssociative($this->items[0])) {
