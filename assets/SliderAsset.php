@@ -13,12 +13,7 @@ class SliderAsset extends AssetBundle
     /**
      * @var string
      */
-    public static $theme = 'default';
-
-    /**
-     * @var string
-     */
-    public $sourcePath = '@bower/owlcarousel2/dist';
+    public $sourcePath = '@bower/lightslider/src';
 
     /**
      * @var array
@@ -35,17 +30,15 @@ class SliderAsset extends AssetBundle
      */
     public function init()
     {
-        $min = YII_ENV_DEV ? '' : '.min';
-        $this->css[] = 'assets/owl.carousel' . $min . '.css';
-        $this->css[] = 'assets/owl.theme.' . self::$theme . $min . '.css';
-
-        $this->js[] = 'owl.carousel' . $min . '.js';
+        parent::init();
+        $this->css = ['css/lightslider.css'];
+        $this->js = ['js/lightslider.js'];
     }
 
     /**
      * @var array
      */
     public $depends = [
-        'yii\web\JqueryAsset',
+        'yii\web\JqueryAsset'
     ];
 }
