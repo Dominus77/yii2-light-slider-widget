@@ -14,6 +14,15 @@
         "yiisoft/yii2": "~2.0.0",
         "bower-asset/lightslider": "^1.1"
     },
+    "require-dev": {
+        "phpunit/phpunit": "6.*"
+    },
+    "repositories": [
+        {
+            "type": "composer",
+            "url": "https://asset-packagist.org"
+        }
+    ],
     "autoload": {
         "psr-4": {
             "dominus77\\lightslider\\": ""

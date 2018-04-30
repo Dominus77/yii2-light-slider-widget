@@ -100,7 +100,7 @@ class Slider extends Widget
      * Set client options
      * @return string
      */
-    protected function getOptions()
+    public function getOptions()
     {
         $options = [];
         $options = ArrayHelper::merge($options, $this->clientOptions);
