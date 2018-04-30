@@ -2,7 +2,7 @@
     "name": "dominus77/yii2-light-slider-widget",
     "description": "Renders a JQuery LightSlider widget for yii2.",
     "type": "yii2-extension",
-    "keywords": ["yii2","extension","JQuery","LightSlider","dominus77","widget"],
+    "keywords": ["yii2","extension","JQuery","LightSlider","lightGallery","dominus77","widget"],
     "license": "MIT",
     "authors": [
         {
