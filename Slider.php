@@ -118,7 +118,7 @@ class Slider extends Widget
     /**
      * @var integer|string
      */
-    private $_id;
+    private $_selector;
 
     /**
      * @var array
@@ -131,8 +131,8 @@ class Slider extends Widget
     public function init()
     {
         parent::init();
-        $this->_id = $this->id ? $this->id : $this->getId();
-        $this->listOptions['id'] = $this->_id;
+        $this->_selector = $this->id ? $this->id : $this->getId();
+        $this->listOptions['id'] = $this->_selector;
         $this->_options = $this->getOptions();
     }
 
@@ -203,7 +203,7 @@ class Slider extends Widget
             GalleryAsset::register($view);
         }
         $script = new JsExpression("
-            var slider = $('#{$this->_id}').lightSlider({$options});
+            var slider = $('#{$this->_selector}').lightSlider({$options});
         ");
         $view->registerJs($script, $view::POS_READY);
     }
