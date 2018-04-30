@@ -6,6 +6,7 @@
 [![Scrutinizer Code Quality](https://scrutinizer-ci.com/g/Dominus77/yii2-light-slider-widget/badges/quality-score.png?b=master)](https://scrutinizer-ci.com/g/Dominus77/yii2-light-slider-widget/?branch=master)
 [![Code Coverage](https://scrutinizer-ci.com/g/Dominus77/yii2-light-slider-widget/badges/coverage.png?b=master)](https://scrutinizer-ci.com/g/Dominus77/yii2-light-slider-widget/?branch=master)
 [![Total Downloads](https://poser.pugx.org/dominus77/yii2-light-slider-widget/downloads)](https://packagist.org/packages/dominus77/yii2-light-slider-widget)
+[![PayPal donate button](https://img.shields.io/badge/paypal-donate-yellow.svg)](https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=KNSWKBG7P8ENU "Donate once-off to this project using Paypal")
 
 Renders a [JQuery LightSlider](http://sachinchoolur.github.io/lightslider/) widget for Yii2.
 
