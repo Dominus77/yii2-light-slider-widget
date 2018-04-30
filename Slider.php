@@ -121,7 +121,7 @@ class Slider extends Widget
     private $_id;
 
     /**
-     * @var
+     * @var array
      */
     private $_options = [];
 
