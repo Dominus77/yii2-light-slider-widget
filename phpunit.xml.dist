@@ -10,7 +10,7 @@
          processIsolation="false"
          stopOnFailure="false">
     <testsuites>
-        <testsuite name="Test JQuery LightSlider widget for yii2">
+        <testsuite name="Yii2 Light Slider Test Suite">
             <directory>./tests/functional</directory>
         </testsuite>
     </testsuites>
