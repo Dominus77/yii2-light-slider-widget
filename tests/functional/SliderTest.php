@@ -20,7 +20,7 @@ class SliderTest extends TestCase
         $clientOptions = [
             'item' => 3,
         ];
-        $this->assertJson(Json::encode($clientOptions), $slider->getOptions());
+        $this->assertJson(Json::encode($clientOptions), $slider->clientOptions);
     }
 
     public function testRunSlider()
