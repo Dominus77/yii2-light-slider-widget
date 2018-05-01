@@ -171,14 +171,22 @@ class Slider extends Widget
     {
         if (!empty($this->items)) {
             $this->registerAssets();
-            echo PHP_EOL . Html::beginTag('ul', $this->listOptions) . PHP_EOL;
-            if (ArrayHelper::isAssociative($this->items[0])) {
-                $this->renderAssociativeItems();
-            } else {
-                $this->renderIndexedItems();
-            }
-            echo Html::endTag('ul') . PHP_EOL;
+            $this->renderSlider();
         }
+    }
+
+    /**
+     * Render List
+     */
+    public function renderSlider()
+    {
+        echo PHP_EOL . Html::beginTag('ul', $this->listOptions) . PHP_EOL;
+        if (ArrayHelper::isAssociative($this->items[0])) {
+            $this->renderAssociativeItems();
+        } else {
+            $this->renderIndexedItems();
+        }
+        echo Html::endTag('ul') . PHP_EOL;
     }
 
     /**
