@@ -148,11 +148,6 @@ class Slider extends Widget
     private $_selector = '';
 
     /**
-     * @var array
-     */
-    private $_options = [];
-
-    /**
      * Initializes the widget.
      */
     public function init()
@@ -160,7 +155,6 @@ class Slider extends Widget
         parent::init();
         $this->_selector = $this->id ? $this->id : $this->getId();
         $this->listOptions['id'] = $this->_selector;
-        $this->_options = $this->getOptions();
     }
 
     /**
@@ -171,14 +165,14 @@ class Slider extends Widget
     {
         if (!empty($this->items)) {
             $this->registerAssets();
-            $this->renderSlider();
+            $this->renderList();
         }
     }
 
     /**
      * Render List
      */
-    public function renderSlider()
+    public function renderList()
     {
         echo PHP_EOL . Html::beginTag('ul', $this->listOptions) . PHP_EOL;
         if (ArrayHelper::isAssociative($this->items[0])) {
@@ -217,24 +211,14 @@ class Slider extends Widget
     }
 
     /**
-     * Set client options
-     * @return array
-     */
-    public function getOptions()
-    {
-        $options = [];
-        return ArrayHelper::merge($options, $this->clientOptions);
-    }
-
-    /**
      * Register resource
      */
     public function registerAssets()
     {
-        $options = Json::encode($this->_options);
+        $options = Json::encode($this->clientOptions);
         $view = $this->getView();
         SliderAsset::register($view);
-        if (isset($this->_options['gallery']) && $this->_options['gallery'] === true) {
+        if (isset($this->clientOptions['gallery']) && $this->clientOptions['gallery'] === true) {
             GalleryAsset::register($view);
         }
         $script = new JsExpression("
