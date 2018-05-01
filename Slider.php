@@ -27,8 +27,8 @@ use dominus77\lightslider\assets\GalleryAsset;
  *      'slideMargin' => 10,
  *      //...
  *  ],
- *  'listOptions' => [],
- *  'itemOptions' => [],
+ *  'listOptions' => [], // Set <ul> options
+ *  'itemsOptions' => [], // Set options <li> all
  * ]); ?>
  *
  * Integrate with lightGallery (http://sachinchoolur.github.io/lightGallery/)
