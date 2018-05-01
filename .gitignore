@@ -2,5 +2,3 @@
 build
 vendor
 composer.lock
-.scrutinizer.yml
-.travis.yml
