@@ -9,7 +9,7 @@
 [![PayPal donate button](https://img.shields.io/badge/paypal-donate-yellow.svg)](https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=KNSWKBG7P8ENU "Donate once-off to this project using Paypal")
 [![SensioLabsInsight](https://insight.sensiolabs.com/projects/ed5b0f52-d3b2-42d0-8b26-da02abcfdc17/mini.png)](https://insight.sensiolabs.com/projects/ed5b0f52-d3b2-42d0-8b26-da02abcfdc17)
 
-Renders a [JQuery LightSlider](http://sachinchoolur.github.io/lightslider/) widget for Yii2.
+Renders a [JQuery LightSlider](http://sachinchoolur.github.io/lightslider/) widget and Integrate with [lightGallery](http://sachinchoolur.github.io/lightGallery/) for Yii2.
 
 ## Installation
 
