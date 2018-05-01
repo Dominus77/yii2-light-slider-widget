@@ -44,7 +44,7 @@ Once the extension is installed, simply use it in your code by  :
         //...        
     ],
     'listOptions' => [], // Set <ul> options
-    'itemsOptions' => [], // Global set <li> options
+    'itemsOptions' => [], // Set options <li> all
 ]) ?>
 ```
 
