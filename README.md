@@ -54,7 +54,7 @@ Once the extension is installed, simply use it in your code by  :
     'id' => 'myGalleryID',
     'items' => [
         [
-            'item' => \yii\helpers\Html::img(Yii::getAlias('@web/uploads/img/image1.jpg')),
+            'item' => \yii\helpers\Html::img(\Yii::getAlias('@web/uploads/img/image1.jpg')),
             'options' => [
                 'data-thumb' => \Yii::getAlias('@web/uploads/img/thumb/image1.jpg'),
                 'data-src' => \Yii::getAlias('@web/uploads/img/largeImage1.jpg'),
@@ -62,7 +62,7 @@ Once the extension is installed, simply use it in your code by  :
             ]
         ],
         [
-            'item' => \yii\helpers\Html::img(Yii::getAlias('@web/uploads/img/image2.jpg')),
+            'item' => \yii\helpers\Html::img(\Yii::getAlias('@web/uploads/img/image2.jpg')),
             'options' => [
                 'data' => [
                     'thumb' => \Yii::getAlias('@web/uploads/img/thumb/image2.jpg'),
