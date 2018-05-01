@@ -101,8 +101,8 @@ abstract class TestCase extends \PHPUnit\Framework\TestCase
      */
     protected function getVendorPath()
     {
-        return dirname(dirname(dirname(dirname(__DIR__)))) . '/yii2-developer.loc/vendor';
-        //return dirname(dirname(__DIR__)) . '/vendor';
+        //return dirname(dirname(dirname(dirname(__DIR__)))) . '/yii2-developer.loc/vendor';
+        return dirname(dirname(__DIR__)) . '/vendor';
     }
 
     /**
