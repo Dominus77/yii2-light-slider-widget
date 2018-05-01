@@ -7,6 +7,7 @@
 [![Code Coverage](https://scrutinizer-ci.com/g/Dominus77/yii2-light-slider-widget/badges/coverage.png?b=master)](https://scrutinizer-ci.com/g/Dominus77/yii2-light-slider-widget/?branch=master)
 [![Total Downloads](https://poser.pugx.org/dominus77/yii2-light-slider-widget/downloads)](https://packagist.org/packages/dominus77/yii2-light-slider-widget)
 [![PayPal donate button](https://img.shields.io/badge/paypal-donate-yellow.svg)](https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=KNSWKBG7P8ENU "Donate once-off to this project using Paypal")
+[![SensioLabsInsight](https://insight.sensiolabs.com/projects/ed5b0f52-d3b2-42d0-8b26-da02abcfdc17/mini.png)](https://insight.sensiolabs.com/projects/ed5b0f52-d3b2-42d0-8b26-da02abcfdc17)
 
 Renders a [JQuery LightSlider](http://sachinchoolur.github.io/lightslider/) widget for Yii2.
 
@@ -97,3 +98,6 @@ Please, check the [JQuery LightSlider](http://sachinchoolur.github.io/lightslide
 
 ## License
 The MIT License (MIT). Please see [License File](https://github.com/Dominus77/yii2-light-slider-widget/blob/master/LICENSE.md) for more information.
+
+## Sensio Labs
+[![SensioLabsInsight](https://insight.sensiolabs.com/projects/ed5b0f52-d3b2-42d0-8b26-da02abcfdc17/big.png)](https://insight.sensiolabs.com/projects/ed5b0f52-d3b2-42d0-8b26-da02abcfdc17)
