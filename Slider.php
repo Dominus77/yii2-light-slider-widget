@@ -16,7 +16,7 @@ use dominus77\lightslider\assets\GalleryAsset;
  * @package dominus77\lightslider
  * @see http://sachinchoolur.github.io/lightslider/
  *
- * Slider
+ * Render Slider
  * -------------------------------------------------
  * <?= \dominus77\lightslider\Slider::widget([
  *  'items' => ['Slide 1', 'Slide 2', 'Slide 3', 'Slide 4', 'Slide 5', 'Slide 6', 'Slide 7', '...'],
@@ -32,7 +32,6 @@ use dominus77\lightslider\assets\GalleryAsset;
  * ]); ?>
  *
  * Integrate with lightGallery (http://sachinchoolur.github.io/lightGallery/)
- *
  * -------------------------------------------------
  * <?= \dominus77\lightslider\Slider::widget([
  *  'id' => 'myGalleryID',
@@ -78,19 +77,39 @@ use dominus77\lightslider\assets\GalleryAsset;
 class Slider extends Widget
 {
     /**
-     * @var string|integer
+     * @var string
      * 'id' => 'myId',
      */
     public $id = '';
 
     /**
-     * Items
+     * Set Items
      * @var array
      *
-     * [
+     * Example 1: Indexed items array
+     * ---------------------------------
+     * $items = [
      *  '<h1>Slide 1</h1><p>Text 1</p>',
      *  '<h1>Slide 2</h1><p>Text 2</p>',
      *  '...',
+     * ]
+     *
+     * Example 2: Associative items array
+     * ---------------------------------
+     * $items = [
+     *  [
+     *      'item' => '<h1>Slide 1</h1><p>Text 1</p>',
+     *      'options' => [
+     *          'class' => 'text-success',
+     *      ]
+     *  ],
+     *  [
+     *      'item' => '<h1>Slide 2</h1><p>Text 2</p>',
+     *      'options' => [
+     *          'class' => 'text-danger',
+     *      ]
+     *  ],
+     *  //...
      * ]
      */
     public $items = [];
@@ -104,21 +123,29 @@ class Slider extends Widget
     /**
      * List Options
      * @var array
+     *
+     * Usage:
      * 'listOptions' => ['class' => 'myListCssClass']
+     * Result:
+     * <ul class="myListCssClass">...</ul>
      */
     public $listOptions = [];
 
     /**
-     * Items options
+     * Global Items options
      * @var array
-     * 'itemOptions' => ['class' => 'myItemsCssClass']
+     *
+     * Usage:
+     * 'itemsOptions' => ['class' => 'myItemsCssClass']
+     * Result:
+     * <li class="myItemsCssClass">...</li>
      */
-    public $itemOptions = [];
+    public $itemsOptions = [];
 
     /**
-     * @var integer|string
+     * @var string
      */
-    private $_selector;
+    private $_selector = '';
 
     /**
      * @var array
@@ -138,36 +165,36 @@ class Slider extends Widget
 
     /**
      * Renders widget
-     * @inheritdoc
+     * @return string|void
      */
     public function run()
     {
         if (!empty($this->items)) {
             $this->registerAssets();
-            echo Html::beginTag('ul', $this->listOptions) . PHP_EOL;
+            echo PHP_EOL . Html::beginTag('ul', $this->listOptions) . PHP_EOL;
             if (ArrayHelper::isAssociative($this->items[0])) {
-                $this->renderGalleryItems();
+                $this->renderAssociativeItems();
             } else {
-                $this->renderSliderItems();
+                $this->renderIndexedItems();
             }
             echo Html::endTag('ul') . PHP_EOL;
         }
     }
 
     /**
-     * Render Slider Items
+     * Render Indexed array items
      */
-    public function renderSliderItems()
+    public function renderIndexedItems()
     {
         foreach ($this->items as $key => $item) {
-            echo Html::tag('li', $item, $this->itemOptions) . PHP_EOL;
+            echo Html::tag('li', $item, $this->itemsOptions) . PHP_EOL;
         }
     }
 
     /**
-     * Render Gallery Items
+     * Render Associative array items
      */
-    public function renderGalleryItems()
+    public function renderAssociativeItems()
     {
         foreach ($this->items as $item) {
             $itemData = [];
@@ -176,7 +203,7 @@ class Slider extends Widget
                     $itemData[$key] = $data;
                 }
             }
-            $itemOptions = ArrayHelper::merge($itemData, $this->itemOptions);
+            $itemOptions = ArrayHelper::merge($itemData, $this->itemsOptions);
             echo Html::tag('li', $item['item'], $itemOptions) . PHP_EOL;
         }
     }

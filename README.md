@@ -43,8 +43,8 @@ Once the extension is installed, simply use it in your code by  :
         'slideMargin' => 10,
         //...        
     ],
-    'listOptions' => [],
-    'itemOptions' => [],
+    'listOptions' => [], // Set <ul> options
+    'itemsOptions' => [], // Global set <li> options
 ]) ?>
 ```
 
