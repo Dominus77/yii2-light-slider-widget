@@ -226,7 +226,7 @@ class Slider extends Widget
             GalleryAsset::register($view);
         }
         $script = new JsExpression("
-            var slider = $('#{$this->_selector}').lightSlider({$options});
+            var slider_{$this->_selector} = $('#{$this->_selector}').lightSlider({$options});
         ");
         $view->registerJs($script, $view::POS_READY);
     }
