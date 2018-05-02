@@ -37,7 +37,8 @@ Once the extension is installed, simply use it in your code by  :
 ```php
 <?= \dominus77\lightslider\Slider::widget([
     'items' => ['Slide 1', 'Slide 2', 'Slide 3', 'Slide 4', 'Slide 5', 'Slide 6', 'Slide 7'],
-    'clientOptions' => [            
+    'clientOptions' => [
+        // settings: http://sachinchoolur.github.io/lightslider/settings.html
         'item' => 3,
         'autoWidth' => false,
         'slideMove' => 1, // slidemove will be 1 if loop is true
@@ -82,11 +83,14 @@ Once the extension is installed, simply use it in your code by  :
         'slideMargin' => 0,
         'enableDrag' => false,
         'currentPagerPosition' => 'left',
-        'onSliderLoad' => new \yii\web\JsExpression("function(el) {
-            el.lightGallery({
-                selector: '#myGalleryID .lslide'
-            });
-        }"),
+        'onSliderLoad' => new \yii\web\JsExpression("
+            function(el) {
+                el.lightGallery({
+                    // options: http://sachinchoolur.github.io/lightGallery/docs/api.html
+                    selector: '#myGalleryID .lslide'
+                });
+            }
+        "),
         //...        
     ],
     //...
@@ -94,7 +98,8 @@ Once the extension is installed, simply use it in your code by  :
 ```
 
 ## More Information
-Please, check the [JQuery LightSlider](http://sachinchoolur.github.io/lightslider/)
+Please, check the [JQuery LightSlider](http://sachinchoolur.github.io/lightslider/) and 
+[lightGallery](http://sachinchoolur.github.io/lightGallery/docs/api.html)
 
 ## License
 The MIT License (MIT). Please see [License File](https://github.com/Dominus77/yii2-light-slider-widget/blob/master/LICENSE.md) for more information.
