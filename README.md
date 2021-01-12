@@ -16,14 +16,14 @@ The preferred way to install this extension is through [composer](http://getcomp
 
 Either run
 
-```
-php composer.phar require --prefer-dist dominus77/yii2-light-slider-widget "~1.0"
+```bash
+php composer.phar require dominus77/yii2-light-slider-widget
 ```
 
 or add
 
-```
-"dominus77/yii2-light-slider-widget": "~1.0"
+```bash
+"dominus77/yii2-light-slider-widget": "^1.0"
 ```
 
 to the require section of your `composer.json` file.
@@ -95,7 +95,10 @@ Once the extension is installed, simply use it in your code by  :
     //...
 ]) ?>
 ```
-
+## Tests
+```bash
+vendor/bin/phpunit
+```
 ## More Information
 Please, check the [JQuery LightSlider](http://sachinchoolur.github.io/lightslider/) and 
 [lightGallery](http://sachinchoolur.github.io/lightGallery/docs/api.html)
