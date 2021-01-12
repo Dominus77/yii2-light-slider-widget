@@ -6,7 +6,7 @@
 [![Scrutinizer Code Quality](https://scrutinizer-ci.com/g/Dominus77/yii2-light-slider-widget/badges/quality-score.png?b=master)](https://scrutinizer-ci.com/g/Dominus77/yii2-light-slider-widget/?branch=master)
 [![codecov](https://codecov.io/gh/Dominus77/yii2-light-slider-widget/branch/master/graph/badge.svg?token=1F4iI3jrio)](https://codecov.io/gh/Dominus77/yii2-light-slider-widget)
 [![Total Downloads](https://poser.pugx.org/dominus77/yii2-light-slider-widget/downloads)](https://packagist.org/packages/dominus77/yii2-light-slider-widget)
-[![SensioLabsInsight](https://insight.sensiolabs.com/projects/ed5b0f52-d3b2-42d0-8b26-da02abcfdc17/mini.png)](https://insight.sensiolabs.com/projects/ed5b0f52-d3b2-42d0-8b26-da02abcfdc17)
+[![SymfonyInsight](https://insight.symfony.com/projects/8af85dad-6fae-40d2-8260-9c72ee0875a7/mini.svg)](https://insight.symfony.com/projects/8af85dad-6fae-40d2-8260-9c72ee0875a7)
 
 Renders a [JQuery LightSlider](http://sachinchoolur.github.io/lightslider/) widget and Integrate
 with [lightGallery](http://sachinchoolur.github.io/lightGallery/) for Yii2.
@@ -115,4 +115,4 @@ see [License File](https://github.com/Dominus77/yii2-light-slider-widget/blob/ma
 
 ## Sensio Labs
 
-[![SensioLabsInsight](https://insight.sensiolabs.com/projects/ed5b0f52-d3b2-42d0-8b26-da02abcfdc17/big.png)](https://insight.sensiolabs.com/projects/ed5b0f52-d3b2-42d0-8b26-da02abcfdc17)
+[![SymfonyInsight](https://insight.symfony.com/projects/8af85dad-6fae-40d2-8260-9c72ee0875a7/big.svg)](https://insight.symfony.com/projects/8af85dad-6fae-40d2-8260-9c72ee0875a7)
