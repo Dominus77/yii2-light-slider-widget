@@ -2,7 +2,7 @@
 
 [![Latest Stable Version](https://poser.pugx.org/dominus77/yii2-light-slider-widget/v/stable)](https://packagist.org/packages/dominus77/yii2-light-slider-widget)
 [![License](https://poser.pugx.org/dominus77/yii2-light-slider-widget/license)](https://packagist.org/packages/dominus77/yii2-light-slider-widget)
-[![Build Status](https://travis-ci.org/Dominus77/yii2-light-slider-widget.svg?branch=master)](https://travis-ci.org/Dominus77/yii2-light-slider-widget)
+[![build](https://github.com/Dominus77/yii2-light-slider-widget/workflows/build/badge.svg)](https://github.com/Dominus77/yii2-light-slider-widget/actions?query=workflow%3Abuild)
 [![Scrutinizer Code Quality](https://scrutinizer-ci.com/g/Dominus77/yii2-light-slider-widget/badges/quality-score.png?b=master)](https://scrutinizer-ci.com/g/Dominus77/yii2-light-slider-widget/?branch=master)
 [![Code Coverage](https://scrutinizer-ci.com/g/Dominus77/yii2-light-slider-widget/badges/coverage.png?b=master)](https://scrutinizer-ci.com/g/Dominus77/yii2-light-slider-widget/?branch=master)
 [![Total Downloads](https://poser.pugx.org/dominus77/yii2-light-slider-widget/downloads)](https://packagist.org/packages/dominus77/yii2-light-slider-widget)
