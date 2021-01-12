@@ -29,8 +29,8 @@ jobs:
           - "7.4"
 
         coverage-driver:
-          - "pcov"
-          #- "xdebug"
+          #- "pcov"
+          - "xdebug"
           #- "xdebug3"
 
     steps:
