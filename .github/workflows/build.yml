@@ -30,8 +30,8 @@ jobs:
 
         coverage-driver:
           - "pcov"
-          - "xdebug"
-          - "xdebug3"
+          #- "xdebug"
+          #- "xdebug3"
 
     steps:
       - name: Checkout
