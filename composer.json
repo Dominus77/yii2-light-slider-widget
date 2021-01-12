@@ -18,12 +18,6 @@
     "require-dev": {
         "phpunit/phpunit": "6.*"
     },
-    "scripts": {
-        "test": "phpunit"
-    },
-    "config": {
-        "sort-packages": true
-    },
     "repositories": [
         {
             "type": "composer",
