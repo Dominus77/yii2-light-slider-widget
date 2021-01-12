@@ -8,7 +8,8 @@
 [![Total Downloads](https://poser.pugx.org/dominus77/yii2-light-slider-widget/downloads)](https://packagist.org/packages/dominus77/yii2-light-slider-widget)
 [![SensioLabsInsight](https://insight.sensiolabs.com/projects/ed5b0f52-d3b2-42d0-8b26-da02abcfdc17/mini.png)](https://insight.sensiolabs.com/projects/ed5b0f52-d3b2-42d0-8b26-da02abcfdc17)
 
-Renders a [JQuery LightSlider](http://sachinchoolur.github.io/lightslider/) widget and Integrate with [lightGallery](http://sachinchoolur.github.io/lightGallery/) for Yii2.
+Renders a [JQuery LightSlider](http://sachinchoolur.github.io/lightslider/) widget and Integrate
+with [lightGallery](http://sachinchoolur.github.io/lightGallery/) for Yii2.
 
 ## Installation
 
@@ -27,7 +28,6 @@ or add
 ```
 
 to the require section of your `composer.json` file.
-
 
 ## Usage
 
@@ -50,6 +50,7 @@ Once the extension is installed, simply use it in your code by  :
 ```
 
 ## Integrate with [lightGallery](http://sachinchoolur.github.io/lightGallery/)
+
 ```php
 <?= \dominus77\lightslider\Slider::widget([
     'id' => 'myGalleryID',
@@ -95,16 +96,23 @@ Once the extension is installed, simply use it in your code by  :
     //...
 ]) ?>
 ```
+
 ## Tests
+
 ```bash
 vendor/bin/phpunit
 ```
+
 ## More Information
-Please, check the [JQuery LightSlider](http://sachinchoolur.github.io/lightslider/) and 
+
+Please, check the [JQuery LightSlider](http://sachinchoolur.github.io/lightslider/) and
 [lightGallery](http://sachinchoolur.github.io/lightGallery/docs/api.html)
 
 ## License
-The MIT License (MIT). Please see [License File](https://github.com/Dominus77/yii2-light-slider-widget/blob/master/LICENSE.md) for more information.
+
+The MIT License (MIT). Please
+see [License File](https://github.com/Dominus77/yii2-light-slider-widget/blob/master/LICENSE.md) for more information.
 
 ## Sensio Labs
+
 [![SensioLabsInsight](https://insight.sensiolabs.com/projects/ed5b0f52-d3b2-42d0-8b26-da02abcfdc17/big.png)](https://insight.sensiolabs.com/projects/ed5b0f52-d3b2-42d0-8b26-da02abcfdc17)
